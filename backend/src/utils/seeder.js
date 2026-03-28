@@ -16,7 +16,7 @@ const seedData = async () => {
       console.log('⚠️  Already seeded. Skipping.');
       process.exit(0);
     }
-
+  //seeder details
     const admin = await User.create({
       firstName: 'Super',
       lastName: 'Admin',
