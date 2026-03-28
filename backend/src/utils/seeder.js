@@ -8,7 +8,7 @@ dns.setServers(['8.8.8.8', '8.8.4.4']);
 
 const seedData = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_URI || 'mongodb+srv://viraj:zenvio123@zenviodb.cyi542q.mongodb.net/?appName=zenvioDB');
+    await mongoose.connect(process.env.MONGO_URI || '');
     console.log('✅ Connected to MongoDB');
 
     const existing = await User.findOne({ email: 'admin@zenvio.io' });
